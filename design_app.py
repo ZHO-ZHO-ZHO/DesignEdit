@@ -53,5 +53,5 @@ with gr.Blocks(css='style.css') as demo:
         with gr.TabItem('🔧 Mask Preparation: Draw or Sketch'):
             create_demo_mask_box(model.run_mask)
 demo.queue(concurrency_count=3, max_size=20)
-demo.launch()
+demo.launch(share=True)
 
